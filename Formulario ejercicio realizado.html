@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clase 4 - HTML -Formularios </title>
+    </head>
+    <body>
+        <header>
+            <h1>Formularios</h1>
+        </header>
+
+        <main>
+            <section>
+                <!--los formularios para enviar informacion-->
+                <fieldset>
+                    <legend>Datos Personales </legend>
+                    <form>
+                        <!--input:varios tipos-->
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input maxlength="5">
+                            id="nombre"
+                            placeholder="carlos"
+                        </div>
+                        <div>
+                            <label>Edad</label>
+                            <input type="number"
+                            min="0"
+                            max="120">
+                            <label>Mes:</label>
+                            <input type="number"
+                            min="1"
+                            max="11">
+                            <input type="range"
+                            step="20"
+                            value="100">
+                        </div>
+                        <div> 
+                            <label>Fecha Nacimiento </label>
+                            <input type="date" value="2000-01-31">
+                        </div>
+                        <div> 
+                            <label for="foto">Foto</label>
+                            <input type="file">
+                        </div>
+                        <div> 
+                            <label>Nacionalidad</label>
+                            <select name="nacionalidad"
+                            id="nacionalidad">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Brasil">Brasil</option>
+                         </select>
+                        </div>
+                    </form>
+                </fieldset>
+            </section>
+        </main>
+    </body>
+</html>
